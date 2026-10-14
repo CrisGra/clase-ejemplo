@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hola Mundo</title>
+  <style>
+    :root {
+      --fondo: #f4ecd8;
+      --texto: #1b1b1b;
+      --suave: #5e564a;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2.5rem, 9vw, 5.5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 0 0 2rem;
+      font-size: 1.125rem;
+      color: var(--suave);
+    }
+    .boton {
+      display: inline-block;
+      padding: 0.875rem 2.25rem;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      font: inherit;
+      font-size: 1.0625rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .boton:hover { background: #222; }
+    .boton:focus-visible { outline: 3px solid #000; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <h1>¡Hola, mundo!</h1>
+  <p>Mi primera página en clase-ejemplo.</p>
+  <button class="boton" type="button">Hablemos</button>
+</body>
+</html>
